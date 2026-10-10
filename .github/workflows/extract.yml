@@ -13,18 +13,24 @@ steps:
 - name: Checkout repository
 uses: actions/checkout@v4
 
+  - name: Install unzip
+    run: sudo apt-get update && sudo apt-get install -y unzip
+
   - name: Extract ZIP files
     run: |
+      set -eu
       mkdir -p extracted
-      find . -type f -name '*.zip' \
-        -not -path './.git/*' \
-        -exec sh -c '
-          for file do
-            name=$(basename "$file" .zip)
-            mkdir -p "extracted/$name"
-            unzip -o "$file" -d "extracted/$name"
-          done
-        ' sh {} +
+      found=0
+      while IFS= read -r -d '' file; do
+        found=1
+        name=$(basename "$file" .zip)
+        mkdir -p "extracted/$name"
+        unzip -o "$file" -d "extracted/$name"
+      done < <(find . -type f -name '*.zip' -not -path './.git/*' -not -path './extracted/*' -print0)
+      if [ "$found" -eq 0 ]; then
+        echo "Tidak ada file ZIP di repository."
+        exit 1
+      fi
 
   - name: Commit extracted files
     run: |
