@@ -1,0 +1,2 @@
+# PhiSync
+Script bot WhatsApp
