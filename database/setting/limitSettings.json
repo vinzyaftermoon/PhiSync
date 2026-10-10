@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "resetHour": 0,
+  "timezone": "Asia/Makassar",
+  "limit": {
+    "free": 20,
+    "basic": 100,
+    "premium": 500,
+    "vip": 9999
+  },
+  "lastReset": 0
+}

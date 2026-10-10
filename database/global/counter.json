@@ -1,0 +1,12 @@
+{
+  "id": {
+    "deposit": 0,
+    "sewa": 2
+  },
+  "total": {
+    "user": 0,
+    "grup": 2,
+    "sewa": 2,
+    "transaksi": 0
+  }
+}

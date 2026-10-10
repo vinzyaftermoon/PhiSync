@@ -1,0 +1,24 @@
+[
+  {
+    "id": "SEWA-0001",
+    "idGrup": "120363430396405912@g.us",
+    "nomor": "6281338352080@s.whatsapp.net",
+    "tanggalMulai": "2026-10-08T22:35:10.354Z",
+    "tanggalExpired": "3025-02-08T22:35:10.354Z",
+    "status": "active",
+    "addedBy": "6282374633884@s.whatsapp.net",
+    "harga": "Rp 0",
+    "durasi": "999y"
+  },
+  {
+    "id": "SEWA-0002",
+    "idGrup": "120363430147162456@g.us",
+    "nomor": "6281338352080@s.whatsapp.net",
+    "tanggalMulai": "2026-10-08T22:35:29.801Z",
+    "tanggalExpired": "3025-02-08T22:35:29.801Z",
+    "status": "active",
+    "addedBy": "6282374633884@s.whatsapp.net",
+    "harga": "Rp 0",
+    "durasi": "999y"
+  }
+]

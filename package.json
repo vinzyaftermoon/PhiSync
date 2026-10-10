@@ -1,0 +1,21 @@
+{
+  "name": "lolpop-md",
+  "version": "1.1.0",
+  "description": "Lolpop MD — WhatsApp Bot",
+  "type": "module",
+  "main": "index.js",
+  "author": "Vinzy Nightly",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "chalk": "^5.3.0",
+    "jimp": "^1.6.1",
+    "pino": "^9.5.0",
+    "undici": "^6.29.0"
+  }
+}

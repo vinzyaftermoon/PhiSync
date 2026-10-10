@@ -1,0 +1,10 @@
+{
+  "sewa": {
+    "enabled": false,
+    "autoKick": false
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "🛠️ *BOT SEDANG MAINTENANCE*\n\nMohon tunggu ya, owner lagi benerin bot 😹\nNanti balik lagi kok ☝🏻"
+  }
+}
